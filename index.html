@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+               <title>My Portfolio</title>
+               <link rel="stylesheet" href="style.css">
+               <script src="https://kit.fontawesome.com/febf2e9030.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+<div id="header">
+<div class="container">
+    <nav>
+        <img src="" class="">
+        <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#services">Internships</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-octagon-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+        <p>Frontend Developer</p>
+        <h2 style="color: red;">Undergraduate student</h2>
+        <h2>Hi, I'm <span>Ambica Kondayyapalepu</span></h2>
+    </div>
+</div>
+</div>
+<!-------------about----------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/skill.png">
+
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>I am currently pursuing my bachelor's degree in Computer Science Engineering at Pragati Enginerring College. I am passionate to learn new technologies. My favourite domain is  <span>"Frontend Developer"</span> </p>
+                <div class="tab-titles">
+                    <p class="tab-links" onclick="opentab('skills')">Skills & Education</p>
+                   
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul><li>skills:</li>
+                        <li><span>java Programming</span></li>
+                        <li><span>HTML</span>&<span>CSS</span></li>
+                        <li><span>Javascript</span><br></li>
+                        <li><span>SQL</span></li>
+                       <li><span>MERN Stack</span></li>
+                    </ul>
+                <br>
+                    <ul><li>Education:</li>
+                        <li><span>ssc</span><br>MPLH Girls High School (2018)</li>
+                        <li><span>Diploma</span><br>Andhra-Polytechnic-Kakinada (2018-2021)</li>
+                        <li><span>Engineering</span><br>Pragati Engineering College (2021-2024)</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Internships</h1>
+        <div class="services-list">
+<div>
+    <i class="fa-solid fa-code"></i>
+    <h2>Internship: Oasis Infobye </h2>
+        <p>Domain: Java Development</p>
+</div>
+
+<div>
+    <i class="fa-solid fa-cloud"></i>
+   
+    <h2>Internship: Future Ready Talent </h2>
+        <p>Domain: Azure cloud service deployment</p>
+</div>
+
+<div>
+    <i class="fa-solid fa-shield-halved"></i>
+    <h2>Internship: Cisco netcad Academy</h2>
+        <p>Domain: Cybersecurity-Essentials</p>
+</div>
+        </div>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact</h1>
+                <p><i class="fa-regular fa-paper-plane-top"></i>ambicakondayyapalepu@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i>9704073444</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+                <br>
+                <a  href="images/K.Ambica-Resume1.pdf" download class="btn btn2"> Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="EmailID" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Msg"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>
+             @2023 All rights reserved to Ambica Kondayyapalepu.
+        </p>
+    </div>
+</div>
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname)
+    {
+
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-link");
+        }
+       
+    }
+</script>
+<script>
+    var sidemeu=document.getElementById("sidemenu");
+    function openmenu(){
+sidemeu.style.right="0";
+
+    }
+
+    function closemenu(){
+sidemeu.style.right="-200px";
+
+    }
+</script>
+    </body>
+</html>
